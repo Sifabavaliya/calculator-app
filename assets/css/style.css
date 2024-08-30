@@ -21,13 +21,14 @@ body {
 }
 
 .calculator {
+  width: 510px;
+  overflow-y: hidden;
   border-radius: 15px;
-  overflow: hidden;
 }
 
 .calc-keys {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 button {
@@ -37,17 +38,15 @@ button {
   background: white;
 }
 
-.display {
-  background: black;
-  padding: 11px 10px;
-}
-
-p#user-input {
+.display input {
   text-align: end;
-  margin: 15px;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 300;
   color: white;
+  background: black;
+  padding: 11px 10px;
+  border: none;
+  width: 510px;
 }
 
 .operations {
